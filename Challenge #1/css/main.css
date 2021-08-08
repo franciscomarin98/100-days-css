@@ -24,12 +24,16 @@
 }
 
 body {
-	width           : 100vw;
-	height          : 100vh;
-	display         : flex;
-	justify-content : center;
-	align-items     : center;
-	background-color: var(--pale-blue);
+	width                : 100vw;
+	height               : 100vh;
+	display              : flex;
+	justify-content      : center;
+	align-items          : center;
+	background           : url('../images/pattern-background-desktop.svg');
+	background-repeat    : no-repeat;
+	background-attachment: fixed;
+	background-position  : top;
+	background-color     : var(--pale-blue);
 }
 
 .card {
@@ -191,4 +195,14 @@ a:focus {
 .btn-secondary:focus,
 .btn-secondary:active {
 	color: var(--dark-blue);
+}
+
+@media only screen and (width: 600px) {
+	body {
+		background           : url('../images/pattern-background-mobile.svg');
+		background-repeat    : no-repeat;
+		background-attachment: fixed;
+		background-position  : top;
+		background-color     : var(--pale-blue);
+	}
 }
