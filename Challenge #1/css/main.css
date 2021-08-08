@@ -1,0 +1,65 @@
+*,
+*::before,
+*::after {
+	margin    : 0;
+	padding   : 0;
+	box-sizing: border-box;
+	font-family: "Red Hat Display",
+		sans-serif;
+}
+
+:root {
+	--pale-blue       : hsl(225, 100%, 94%);
+	--bright-blue     : hsl(245, 75%, 52%);
+	--very-pale-blue  : hsl(225, 100%, 98%);
+	--desaturated-blue: hsl(224, 23%, 55%);
+	--dark-blue       : hsl(223, 47%, 23%);
+}
+
+body {
+	width           : 100vw;
+	height          : 100vh;
+	display         : flex;
+	justify-content : center;
+	align-items     : center;
+	background-color: var(--pale-blue);
+}
+
+.card {
+	width           : 370px;
+	background-color: var(--very-pale-blue);
+	border-radius   : 15px;
+}
+
+.card-image {
+	height                 : 180px;
+	background             : url('../images/illustration-hero.svg');
+	background-size        : cover;
+	border-top-left-radius : 15px;
+	border-top-right-radius: 15px;
+}
+
+.card-content {
+	margin: 25px;
+}
+
+.card-content .card-text {
+	display        : flex;
+	flex-direction : column;
+	justify-content: center;
+	align-items    : center;
+}
+
+.card-text .title {
+	color        : var(--dark-blue);
+	font-size    : 22px;
+	font-weight  : 900;
+	margin-bottom: 15px;
+}
+
+.card-text .subtitle {
+	text-align : center;
+	color      : var(--desaturated-blue);
+	font-size  : 16px;
+	line-height: 25px
+}
