@@ -6,7 +6,21 @@
           alt="bandera">
     </div>
     <div class="card-body">
-
+      <p class="name">Germany</p>
+      <div class="detail-pais">
+        <p>
+          <span>Population: </span>
+          81,770,900
+        </p>
+        <p>
+          <span>Region: </span>
+          Europe
+        </p>
+        <p>
+          <span>Capital: </span>
+          Berlín
+        </p>
+      </div>
     </div>
   </div>
 </template>
@@ -39,6 +53,20 @@ export default {
 }
 
 .card .card-body {
-  padding: 1rem;
+  padding: 1rem 1rem 0 1rem;
+}
+
+.card .card-body .name {
+  font-weight: 900;
+  font-size: 16px;
+  margin-bottom: .5rem;
+}
+
+.detail-pais {
+  font-size: 14px;
+}
+
+.detail-pais p > span {
+  font-weight: 600;
 }
 </style>
